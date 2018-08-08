@@ -8,7 +8,7 @@ body{
 
 .wall{
 
-   background-image: url('wall1.jpg');
+   background-image: url('wall2.jpg');
    background-size: cover;
    height: 100vh;
    width: 100vw;
@@ -78,10 +78,16 @@ border-top-right-radius: 5px;
 .f1{
 	color: white;
 	font-weight: bolder;
-	font-size: 2rem;
+	font-size: 2.3rem;
+	font-family: 'Corben', cursive;
+
+
 }
 .f2{
-	font-size: 2rem;
+	font-size: 2.3rem;
+	font-family: 'Corben', cursive;
+
+
 }
 
 .one{
