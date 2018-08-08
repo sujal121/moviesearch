@@ -98,13 +98,13 @@ text2= document.getElementById('searchbyid').value;
                         <p><b>Cast:</b> ${data.Actors}</p>
                         <p><b>Director:</b> ${data.Director}</p>
                         <p><b>Runtime:</b> ${data.Runtime}</p>
-                         <p><b>Laungage:</b>${data.Language}</p>
-                         <p><b>Awards:</b>${data.Awards}</p>
-                          <p><b>Metascore:</b>${data.Metascore}</p>
-                           <p><b>imdb Rating:</b>${data.imdbRating}</p>
-                            <p><b>Box Office:</b>${data.BoxOffice}</p>
-                             <p><b>Production:</b>${data.Production}</p>
-                              <p><b>Website:</b>${data.Website}</p>
+                         <p><b>Laungage:</b> ${data.Language}</p>
+                         <p><b>Awards:</b> ${data.Awards}</p>
+                          <p><b>Metascore:</b> ${data.Metascore}</p>
+                           <p><b>imdb Rating:</b> ${data.imdbRating}</p>
+                            <p><b>Box Office:</b> ${data.BoxOffice}</p>
+                             <p><b>Production:</b> ${data.Production}</p>
+                              
                       </div>
                    </div>
                  </div>
