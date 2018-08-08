@@ -13,35 +13,58 @@ let Findmovie = ()=>{
  let flag=0;
  	let link;
  	let time=0;
+ 	let text2;
  	let y;
     let text1 = 0;
     let name=0;
+    let flag1=0;
  $("#btn1").click(()=>{
  	
- 	
-
+ 	flag1=0;
+text2= document.getElementById('searchbyid').value;
  	text1= document.getElementById('searchbytitle').value;
  	time=document.getElementById('searchbyyear').value;
 
- 	if(text1.length==0){
+ 	if((text1.length==0)&&(text2.length==0)&&(time.length==0)){
  	$( ".searchclass" ).effect( "shake");
  }
- 	else
-	{   
+ 	 
 
 		if(flag==0){
+			if(text1.length==0){
+				$( ".searchclass" ).effect( "shake");
+				flag1=1;
+			}
+			else{
 			link=`https://www.omdbapi.com/?apikey=7818611e&t=${text1}`;
+		}
 		}
 
 
 	
 		if(flag==1){
-		 link=`https://www.omdbapi.com/?apikey=7818611e&i=${text1}`;
+			if(text2.length==0){
+				$( ".searchclass" ).effect( "shake");
+				flag1=1;
+			}
+			else{
+		 link=`https://www.omdbapi.com/?apikey=7818611e&i=${text2}`;
+}
 }
 		if(flag==2){
+			if((text1.length==0)||(time.length==0)){
+             $( ".searchclass" ).effect( "shake");
+             flag1=1;
+			}else{
 			link=`https://www.omdbapi.com/?apikey=7818611e&t=${text1}&y=${time}`;
 		}
+
+		}
 		
+        if(flag1==0)
+
+
+{
 		$.ajax({
 			type:'GET',
 			dataType:'json',
@@ -98,11 +121,12 @@ let Findmovie = ()=>{
 			}
 		});
 		
-		
-	}
+		}
+	
 	document.getElementById("infor").focus();
 
  });
+
 
  $("#option2").click(()=>{
  	$("#searchbyid").css("display","flex");

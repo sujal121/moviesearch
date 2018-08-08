@@ -12,6 +12,7 @@ body{
    justify-content: center;
    display: flex;
    flex-direction: row;
+border: 3px solid #606060;
 
 }
 .wide{ 
@@ -60,6 +61,7 @@ border-top-right-radius: 5px;
 	width: 40vh;
 	min-width: 300px;
 	min-height: 400px;
+	border: 3px solid #606060;
 	
 	
 }
