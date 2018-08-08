@@ -1,0 +1,114 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.wall{
+
+   background-image: url('wall1.jpg');
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+
+}
+.wide{ 
+	display: flex;
+	
+	justify-content: center;
+	flex-direction: column;
+
+	width: 100vw;
+}
+.options{
+	margin: 20px;
+	align-self: center;
+}
+
+
+#searchbyid{
+	display: none;
+
+}
+#searchbyyear{
+	display: none;
+}
+
+
+.searchclass{
+   height: 40px;
+	width: 20vw;
+	min-width: 180px;
+
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+}
+#btn1{
+
+width: 90px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+}
+.poster{
+	height: 50vh;
+	width: 40vh;
+	min-width: 300px;
+	min-height: 400px;
+	
+	
+}
+.one{
+	margin-top: 30px;
+	width: 40vw;
+	display: flex;
+	justify-content: center;
+	
+}
+.two{
+	width: 60vw;
+	padding: 20px;
+}
+.zero{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .zero{
+    	flex-direction: column;
+    }
+
+
+	.input-group{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.searchclass{
+		align-self: center;
+		border-radius: 5px;
+	}
+	#btn1{
+		align-self: center;
+		margin: 12px;
+		border-radius: 5px;
+	}
+	.one{
+		width: 100vw;
+	}
+	.two{
+		width: 100vw;
+	}
+
+
+}
